@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-
-
 const { sequelize } = require('../db')
 const seneca = require('../seneca')
 const server = require('../httpServer')

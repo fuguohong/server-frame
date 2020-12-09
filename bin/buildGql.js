@@ -1,9 +1,4 @@
-/**
- * Created Date: 2020/10/16
- * Author: fgh
- * Description:
- */
-'use strict'
+#!/usr/bin/env node
 
 process.env.ALU_SERVER_ENV = 'dev'
 
@@ -20,7 +15,6 @@ Sequelize.Model.init = function (fields, options) {
     underscored: true,
     timestamps: true,
     // freezeTableName: true,
-    tableName: util.toLine(this.name),
     sequelize: sequelize,
     modelName: this.name,
     ...options
