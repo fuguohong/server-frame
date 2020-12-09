@@ -5,12 +5,13 @@
  */
 'use strict'
 
-const fs = require('fs')
-const path = require('path')
-
-fs.readdirSync(__dirname)
-  .filter(f => f !== 'index.js')
-  .forEach(f => {
-    const name = f.slice(0, -3)
-    exports[name] = require(path.join(__dirname, f))
-  })
+module.exports = {
+  BaseService: require('./lib/baseService'),
+  BaseError: require('./lib/baseError'),
+  logger: require('./lib/logger'),
+  util: require('./lib/util'),
+  ...require('./db'),
+  httpServer: require('./httpServer'),
+  seneca: require('./seneca'),
+  gqlServer: require('./gqlServer')
+}
