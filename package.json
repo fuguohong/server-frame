@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
+  "bin": {
+    "start": "bin/start.js"
   },
   "author": "",
   "license": "ISC"
