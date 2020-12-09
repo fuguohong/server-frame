@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "bin": {
-    "start": "bin/start.js"
+    "sf": "bin/start.js"
   },
   "author": "",
   "license": "ISC"
