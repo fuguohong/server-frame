@@ -1,9 +1,4 @@
-/**
- * Created Date: 2020/12/9
- * Author: fgh
- * Description:
- */
-'use strict'
+#!/usr/bin/env node
 
 console.log('server start aaaaaaaaaaaaaaaaaaaaa')
 
