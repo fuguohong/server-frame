@@ -46,3 +46,5 @@ for (const [k, v] of Object.entries(mds)) {
   const fName = path.join(outdir, k[0].toLowerCase() + k.slice(1) + '.gql')
   fs.writeFileSync(fName, sequelize2gql(v))
 }
+
+console.log('finish!')

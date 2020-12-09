@@ -16,6 +16,8 @@ const resolvers = loader.loadResolver()
 
 const types = loader.loadTypes()
 
+types.push('scalar Date\n\n')
+
 const gqlServer = new ApolloServer({
   // typeDefs: types,
   // resolvers: resolvers,

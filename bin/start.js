@@ -9,6 +9,7 @@ const { logger,loader } = require('../lib')
 const config = loader.loadConfig()
 
 async function main () {
+  const start = Date.now()
   logger.info('服务启动环境：' + config.env)
   await sequelize.sync()
   logger.info('数据库同步完成')
@@ -20,6 +21,7 @@ async function main () {
   logger.info('seneca 监听端口：' + config.seneca.port)
   server.listen(config.webPort)
   logger.info('http服务监听端口:' + config.webPort)
+  logger.info(`服务启动完成，用时${(Date.now()-start)/1000}s`)
 }
 
 main().catch(err => {

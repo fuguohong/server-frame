@@ -22,6 +22,7 @@ const sequelize = new Sequelize({
 const initModel = Sequelize.Model.init
 
 Sequelize.Model.init = function (fields, options) {
+  console.log('asodkasokasodkao===========')
   return initModel.call(this, fields, {
     paranoid: true,
     underscored: true,
