@@ -6,3 +6,5 @@
 'use strict'
 
 console.log('server start aaaaaaaaaaaaaaaaaaaaa')
+
+module.exports = 'asd'
